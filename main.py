@@ -57,7 +57,7 @@ def sign(school_id, password, location, auto_position, vaccine):
                 answer["填报日期(Date)"] = str(
                     datetime.datetime.now(tz=datetime.timezone(datetime.timedelta(hours=8))).date())
                 answer["自动定位(Automatic location)"] = auto_position
-                answer["目前所在地"] = location
+                # answer["目前所在地"] = location
                 answer["疫苗接种情况?(Vaccination status?)"] = vaccine
                 data = json.dumps({"examenSchemeId": 2, "examenTitle": "师生报平安", "answer": answer})
                 headers = {'Content-Type': 'application/json'}
