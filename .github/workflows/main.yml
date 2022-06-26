@@ -28,12 +28,3 @@ jobs:
           VACCINE: ${{ secrets.VACCINE }}
           SCKEY: ${{ secrets.SCKEY }}
         run: python main.py
-      - name: Auto Check 2
-        env:
-          SCHOOL_ID: 32109113
-          PASSWORD: 156843
-          LOCATION: ${{ secrets.LOCATION }}
-          AUTO_POSITION: ${{ secrets.AUTO_POSITION }}
-          VACCINE: 已接种两针剂疫苗（科兴、生物等）第二针
-          SCKEY: ${{ secrets.SCKEY }}
-        run: python main.py
