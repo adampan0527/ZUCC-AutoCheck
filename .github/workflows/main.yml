@@ -21,10 +21,15 @@ jobs:
           pip install -r requirements.txt
       - name: Auto Check
         env:
-          SCHOOL_ID: ${{ secrets.SCHOOL_ID }}
-          PASSWORD: ${{ secrets.PASSWORD }}
+#           SCHOOL_ID: ${{ secrets.SCHOOL_ID }}
+#           PASSWORD: ${{ secrets.PASSWORD }}
+#           LOCATION: ${{ secrets.LOCATION }}
+#           AUTO_POSITION: ${{ secrets.AUTO_POSITION }}
+#           VACCINE: ${{ secrets.VACCINE }}
+          SCHOOL_ID: 32109113
+          PASSWORD: 156843
           LOCATION: ${{ secrets.LOCATION }}
           AUTO_POSITION: ${{ secrets.AUTO_POSITION }}
-          VACCINE: ${{ secrets.VACCINE }}
+          VACCINE: 已接种两针剂疫苗（科兴、生物等）第二针
           SCKEY: ${{ secrets.SCKEY }}
         run: python main.py
