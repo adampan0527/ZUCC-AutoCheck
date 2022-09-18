@@ -1,9 +1,9 @@
 name: ZUCC Auto Check
 
 on:
-  workflow_dispatch:
+#   workflow_dispatch:
   schedule:
-    - cron: '31 16 * * *'
+    - cron: '0 8 * * *'
 
 jobs:
   bot:
